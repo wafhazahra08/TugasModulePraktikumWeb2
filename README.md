@@ -1,7 +1,7 @@
 # TUGAS PEMOGRAMAN WEB 2
-NAMA           : ZULAEHA
+NAMA           : WAFHA ZAHRA MULQIYA
 
-NIM            : 312210575
+NIM            : 312210577
 
 KELAS          : TI.22.A.5
 
@@ -45,8 +45,8 @@ Script untuk file bernama > `php_dasar.php `
     ?>
     <h2>Menggunakan variable</h2>
     <?php
-    $nim = "312210575";
-    $nama = 'ZULAEHA';
+    $nim = "312210577";
+    $nama = 'WAFHA ZAHRA MULQIYA';
     echo "NIM : " . $nim . "<br>";
     echo "Nama : $nama";
     ?>
