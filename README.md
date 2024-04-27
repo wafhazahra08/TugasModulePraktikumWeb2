@@ -10,6 +10,7 @@ DOSEN PENGAMPU : AGUNG NUGROHO S.KOM., M.KOM
 MATA KULIAH : PEMOGRAMAN WEB 2
 
 ## LAB2_PHP_DASAR
+
 '''
 <!DOCTYPE html>
 <html lang="en">
@@ -43,8 +44,8 @@ MATA KULIAH : PEMOGRAMAN WEB 2
     ?>
     <h2>Menggunakan variable</h2>
     <?php
-    $nim = "312210575";
-    $nama = 'ZULAEHA';
+    $nim = "312210577";
+    $nama = 'WAFHA ZAHRA MULQIYA';
     echo "NIM : " . $nim . "<br>";
     echo "Nama : $nama";
     ?>
