@@ -190,7 +190,8 @@ Script untuk file bernama > `php_dasar.php `
 
 ## Hasil Run
 
-![Screenshot (153)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9e56b07b-3152-4d36-b715-4cf3c5e9058c)
+![web2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/c550ad86-2fa6-478f-ae4e-46d9f95509cb)
+
 
 ## Lab3 PHP_DATABASE
 
@@ -220,7 +221,7 @@ die();
 
 ## Hasil Run
 
-![Screenshot (158)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/d1c74fd3-3e0f-444d-b9f9-328658c6865d)
+![web3](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/ea11286f-093a-4a51-8b3d-dc4585eab89b)
 
 > `Index.php`
 ```
