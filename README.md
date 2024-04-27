@@ -120,7 +120,7 @@ Script untuk file bernama > `php_dasar.php `
 </html>
 ```
 ## Hasil Run 
-![Screenshot (170)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/dc9d6bae-765f-4d5d-8b68-22acbd783e72)
+![web1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/e35c1931-5b63-42fb-a51f-21b742ead25e)
 
 ![Screenshot (171)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1b43a7c0-3b8b-42eb-8b03-a538f81ab982)
 
