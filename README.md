@@ -772,10 +772,9 @@ $b->tampilWarna();
 ```
 ## Hasil Run
 
-![Screenshot (168)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/36bedd6f-8905-4d1c-8428-a9ce93337d70)
+![web8](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/1f1a8b81-b659-4cd2-a25b-f73f5a57baba)
 
-
-![Screenshot (169)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/11535481-c042-4caa-afa3-8ddf87164017)
+![web9](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/50027d63-5b4c-48b1-bb5c-5237d74c8f14)
 
   
 # Sekian, Terima kasih.
