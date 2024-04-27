@@ -122,9 +122,9 @@ Script untuk file bernama > `php_dasar.php `
 ## Hasil Run 
 ![web1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/e35c1931-5b63-42fb-a51f-21b742ead25e)
 
-![Screenshot (171)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1b43a7c0-3b8b-42eb-8b03-a538f81ab982)
+![web1 1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/77f76aa7-1fc7-4355-85e1-56fd6841cede)
 
-![Screenshot (172)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/db02de17-8ea2-489b-bb22-4f3b4c570399)
+![web1 2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/33c038fb-10fb-4a04-aee8-96de5596b878)
 
 
 ## TUGAS FORM INPUT
