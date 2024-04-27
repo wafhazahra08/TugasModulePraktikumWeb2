@@ -566,8 +566,10 @@ switch  ($mod) {
 ```
 ## Hasil Run
 
+![web6](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/436db88f-ccdf-4069-926e-0a2e02118843)
 
-https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/3c05596b-7a15-4e9d-aee3-48529b8a8bd3
+![web7](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/121b707a-e734-4d83-8ebc-e6ce3d78522e)
+
 
 ## Lab5 PHP_OOP
 
