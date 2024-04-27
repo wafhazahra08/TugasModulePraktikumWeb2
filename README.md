@@ -282,7 +282,7 @@ $result = mysqli_query($conn, $sql);
 
 ## Hasil Run
 
-![Screenshot (159)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/79de340f-31e6-4bcf-b08e-6b83878f1a9b)
+![web4](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/4fc25083-05ef-42e3-8caa-7dbd09bd2147)
 
 
 > `Tambah.php`
@@ -370,7 +370,7 @@ data">
 ```
 ## Hasil Run
 
-![Screenshot (160)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/cedc71b0-9d39-4ea0-bd4e-87e9964e7fc9)
+![web5](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/d805ac7d-de4e-4f72-a5f6-c57d48e412a7)
 
 
 > `Ubah.php`
