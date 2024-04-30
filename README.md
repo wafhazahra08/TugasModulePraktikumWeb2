@@ -9,8 +9,31 @@ DOSEN PENGAMPU : AGUNG NUGROHO S.KOM., M.KOM
 
 MATA KULIAH    : PEMOGRAMAN WEB 2
 
+# **Daftar Isi**
+***Harap klik satu persatu agar update penjelasan dan hasil program terlihat berurutan***
+
+- **[Lab2 PHP_DASAR](#lab2-PHP_DASAR)**
+
+- **[Lab3 PHP_DATABASE](#Lab3-PHP_DATABASE)**
+
+- **[Lab4 PHP_MODULAR](#Lab4-PHP_MODULAR)**
+
+- **[Lab5 PHP_OOP](#Lab5-PHP_OOP)**
+
+
 ## Lab2 PHP_DASAR
-Script untuk file bernama > `php_dasar.php `
+* Instruksi Praktikum
+1. Persiapkan text editor misalnya VSCode.
+2. Buat folder baru dengan nama lab2_php_dasar pada docroot webserver (htdocs)
+3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya.
+
+
+* Langkah-langkah Praktikum
+1. Install XAMPP Unduh XAMPP dari https://www.apachefriends.org/download.html dan pilih versi portable untuk memudahkan proses installasi. Kemudian extract file tersebut, seusikan direktorinya (misal: d:\xampp)
+
+2. Memulai PHP Buat folder lab2_php_dasar pada root directory web server (d:\xampp\htdocs)
+
+3. PHP Dasar Buat file baru dengan nama php_dasar.php pada directory tersebut. Kemudian buat kode seperti berikut :
 
 ```
 <!DOCTYPE html>
@@ -119,12 +142,12 @@ Script untuk file bernama > `php_dasar.php `
 
 </html>
 ```
-## Hasil Run 
-![web1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/e35c1931-5b63-42fb-a51f-21b742ead25e)
+> **Output**
+![Screenshot (170)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/dc9d6bae-765f-4d5d-8b68-22acbd783e72)
 
-![web1 1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/77f76aa7-1fc7-4355-85e1-56fd6841cede)
+![Screenshot (171)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1b43a7c0-3b8b-42eb-8b03-a538f81ab982)
 
-![web1 2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/33c038fb-10fb-4a04-aee8-96de5596b878)
+![Screenshot (172)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/db02de17-8ea2-489b-bb22-4f3b4c570399)
 
 
 ## TUGAS FORM INPUT
@@ -187,23 +210,54 @@ Script untuk file bernama > `php_dasar.php `
 </body>
 </html>
 ```
+> **Output**
 
-## Hasil Run
-
-![web2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/c550ad86-2fa6-478f-ae4e-46d9f95509cb)
-
+![Screenshot (153)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9e56b07b-3152-4d36-b715-4cf3c5e9058c)
 
 ## Lab3 PHP_DATABASE
 
-> `Buat database latihan1`
-![Latihan1](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/bb57c174-c805-40f2-99a2-c7c28e12c533)
+* Instruksi Praktikum
+1. Persiapkan text editor misalnya VSCode.
+2. Buat folder baru dengan nama lab3_php_database pada docroot webserver (htdocs)
+3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya.
 
-> `Masukan tabel`
+* Langkah-langkah Praktikum
+1. Persiapan Untuk memulai membuat aplikasi CRUD sederhana, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
 
-![Screenshot (167)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/805cc0b2-90cd-43b6-8d31-4c9796cd961b)
+2. Menjalankan MySQL Server Untuk menjalankan MySQL Server dari menu XAMPP Control.
+
+3. Membuat Database: Studi Kasus Data Barang
+```
+CREATE DATABASE latihan1;
+```
+```
+CREATE TABLE data_barang (
+    id_barang int(10) auto_increment Primary Key,
+    kategori varchar(30),
+    nama varchar(30),
+    gambar varchar(100),
+    harga_beli decimal(10,0),
+    harga_jual decimal(10,0),
+    stok int(4)
+);
+```
+![Screenshot (167)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/90e56746-e5a5-4737-8827-3ba4cdb5c041)
 
 
-> `Koneksi.php`
+4. Menambah Data
+```
+INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
+VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 5),
+('Elektronik', 'HP Xiaomi Android', 'hp_xiaomi.jpg', 1000000, 1400000, 5),
+('Elektronik', 'HP OPPO Android', 'hp_oppo.jpg', 1800000, 2300000, 5);
+```
+
+![Screenshot (150)](https://github.com/syifaaurellia/Lab8web/assets/115867244/db3281b0-e06c-4461-98e6-33821fedf087)
+
+
+5. Membuat Program CRUD, Buat folder lab3_php_database pada root directory web server (d:\xampp\htdocs)
+
+6. Membuat file koneksi database, Buat file baru dengan nama `koneksi.php`
 ```
 <?php
 $host = "localhost";
@@ -213,320 +267,58 @@ $db = "latihan1";
 $conn = mysqli_connect($host, $user, $pass, $db);
 if ($conn == false)
 {
-echo "Koneksi ke server gagal.";
-die();
-} else echo "Koneksi berhasil";
-?>   
-```
-
-## Hasil Run
-
-![web3](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/ea11286f-093a-4a51-8b3d-dc4585eab89b)
-
-> `Index.php`
-```
-<?php
-include("koneksi.php");
-// query untuk menampilkan data
-$sql = 'SELECT * FROM data_barang';
-$result = mysqli_query($conn, $sql);
+    echo "Koneksi ke server gagal.";
+    die();
+} #else echo "Koneksi berhasil";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Data Barang</title>
-</head>
-
-<body>
-    <div class="container">
-        <h1>Data Barang</h1>
-        <div class="main">
-            <table>
-                <tr>
-                    <th>Gambar</th>
-                    <th>Nama Barang</th>
-                    <th>Katagori</th>
-                    <th>Harga Jual</th>
-                    <th>Harga Beli</th>
-                    <th>Stok</th>
-                    <th>Aksi</th>
-                </tr>
-                <?php if ($result) : ?>
-                    <?php while ($row = mysqli_fetch_array($result)) : ?>
-                        <tr>
-                            <td><img src="gambar/<?= $row['gambar']; ?>" alt="<?=
-                                                                                $row['nama']; ?>"></td>
-                            <td><?= $row['nama']; ?></td>
-                            <td><?= $row['kategori']; ?></td>
-                            <td><?= $row['harga_beli']; ?></td>
-                            <td><?= $row['harga_jual']; ?></td>
-                            <td><?= $row['stok']; ?></td>
-                            <td><?= $row['id_barang']; ?></td>
-                        </tr>
-                    <?php endwhile;
-                else : ?>
-                    <tr>
-                        <td colspan="7">Belum ada data</td>
-                    </tr>
-                <?php endif; ?>
-            </table>
-        </div>
-    </div>
-</body>
-
-</html>
 ```
+> Buka melalui browser untuk menguji koneksi database untuk menyampilkan pesan koneksi berhasil, ***uncomment*** pada perintah echo “koneksi berhasil”;
 
-## Hasil Run
+![Screenshot (24)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/4af00ce5-fd9f-47ed-8a41-a8bc43e5a4a6)
 
-![web4](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/4fc25083-05ef-42e3-8caa-7dbd09bd2147)
+7. Membuat file index untuk menampilkan data (Read), buat file baru dengan nama `index.php`
 
+> **Output**
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/674ae4f3-6c43-4722-a001-77b4d8774fdd)
 
-> `Tambah.php`
+8. Menambah Data (Create), buat file baru dengan nama `tambah.php`
+
+> **Output**
+![Screenshot (26)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1f29937e-80c3-437d-b5fe-6bc80345e29b)
+
+9. Mengubah Data (Update), buat file baru dengan nama `ubah.php`
+
+> **Output**
+
+![Screenshot (27)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/3039093e-9a41-43bc-8d93-b4a988f74dd7)
+
+10. Menghapus Data (Delete), buat file baru dengan nama `hapus.php`
 ```
 <?php
-error_reporting(E_ALL);
 include_once 'koneksi.php';
-if (isset($_POST['submit'])) {
-    $nama = $_POST['nama'];
-    $kategori = $_POST['kategori'];
-    $harga_jual = $_POST['harga_jual'];
-    $harga_beli = $_POST['harga_beli'];
-    $stok = $_POST['stok'];
-    $file_gambar = $_FILES['file_gambar'];
-    $gambar = null;
-    if ($file_gambar['error'] == 0) {
-        $filename = str_replace(' ', '_', $file_gambar['name']);
-        $destination = dirname(__FILE__) . '/gambar/' . $filename;
-        if (move_uploaded_file($file_gambar['tmp_name'], $destination)) {
-            $gambar = 'gambar/' . $filename;;
-        }
-    }
-    $sql = 'INSERT INTO data_barang (nama, kategori,harga_jual, harga_beli,
-stok, gambar) ';
-    $sql .= "VALUE ('{$nama}', '{$kategori}','{$harga_jual}',
-'{$harga_beli}', '{$stok}', '{$gambar}')";
-    $result = mysqli_query($conn, $sql);
-    header('location: index.php');
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Tambah Barang</title>
-</head>
-
-<body>
-    <div class="container">
-        <h1>Tambah Barang</h1>
-        <div class="main">
-
-            <form method="post" action="tambah.php" enctype="multipart/form-
-data">
-
-                <div class="input">
-                    <label>Nama Barang</label>
-                    <input type="text" name="nama" />
-                </div>
-                <div class="input">
-                    <label>Kategori</label>
-                    <select name="kategori">
-                        <option value="Komputer">Komputer</option>
-                        <option value="Elektronik">Elektronik</option>
-                        <option value="Hand Phone">Hand Phone</option>
-                    </select>
-                </div>
-                <div class="input">
-                    <label>Harga Jual</label>
-                    <input type="text" name="harga_jual" />
-                </div>
-                <div class="input">
-                    <label>Harga Beli</label>
-                    <input type="text" name="harga_beli" />
-                </div>
-                <div class="input">
-                    <label>Stok</label>
-                    <input type="text" name="stok" />
-                </div>
-                <div class="input">
-                    <label>File Gambar</label>
-                    <input type="file" name="file_gambar" />
-                </div>
-                <div class="submit">
-                    <input type="submit" name="submit" value="Simpan" />
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
-
-</html>
-```
-## Hasil Run
-
-![web5](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/d805ac7d-de4e-4f72-a5f6-c57d48e412a7)
-
-
-> `Ubah.php`
-```
-<?php
-error_reporting(E_ALL);
-include_once 'koneksi.php';
-if (isset($_POST['submit'])) {
-    $id = $_POST['id'];
-    $nama = $_POST['nama'];
-    $kategori = $_POST['kategori'];
-    $harga_jual = $_POST['harga_jual'];
-    $harga_beli = $_POST['harga_beli'];
-    $stok = $_POST['stok'];
-    $file_gambar = $_FILES['file_gambar'];
-    $gambar = null;
-    if ($file_gambar['error'] == 0) {
-        $filename = str_replace(' ', '_', $file_gambar['name']);
-        $destination = dirname(__FILE__) . '/gambar/' . $filename;
-        if (move_uploaded_file($file_gambar['tmp_name'], $destination)) {
-            $gambar = 'gambar/' . $filename;;
-        }
-    }
-    $sql = 'UPDATE data_barang SET ';
-    $sql .= "nama = '{$nama}', kategori = '{$kategori}', ";
-    $sql .= "harga_jual = '{$harga_jual}', harga_beli = '{$harga_beli}',
-stok = '{$stok}' ";
-    if (!empty($gambar))
-        $sql .= ", gambar = '{$gambar}' ";
-    $sql .= "WHERE id_barang = '{$id}'";
-    $result = mysqli_query($conn, $sql);
-    header('location: index.php');
-}
 $id = $_GET['id'];
-$sql = "SELECT * FROM data_barang WHERE id_barang = '{$id}'";
+$sql = "DELETE FROM data_barang WHERE id_barang = '{$id}'";
 $result = mysqli_query($conn, $sql);
-if (!$result) die('Error: Data tidak tersedia');
-$data = mysqli_fetch_array($result);
-function is_select($var, $val)
-{
-    if ($var == $val) return 'selected="selected"';
-    return false;
-}
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Ubah Barang</title>
-</head>
-
-<body>
-    <div class="container">
-        <h1>Ubah Barang</h1>
-        <div class="main">
-
-            <form method="post" action="ubah.php" enctype="multipart/form-
-data">
-
-                <div class="input">
-                    <label>Nama Barang</label>
-                    <input type="text" name="nama" value="<?php echo
-                                                            $data['nama']; ?>" />
-                </div>
-                <div class="input">
-                    <label>Kategori</label>
-                    <select name="kategori">
-                        <option <?php echo is_select('Komputer', $data['kategori']); ?> value="Komputer">Komputer</option>
-                        <option <?php echo is_select('Komputer', $data['kategori']); ?> value="Elektronik">Elektronik</option>
-                        <option <?php echo is_select('Komputer', $data['kategori']); ?> value="Hand Phone">Hand Phone</option>
-                    </select>
-                </div>
-                <div class="input">
-                    <label>Harga Jual</label>
-                    <input type="text" name="harga_jual" value="<?php echo
-                                                                $data['harga_jual']; ?>" />
-                </div>
-                <div class="input">
-                    <label>Harga Beli</label>
-                    <input type="text" name="harga_beli" value="<?php echo
-                                                                $data['harga_beli']; ?>" />
-                </div>
-                <div class="input">
-                    <label>Stok</label>
-                    <input type="text" name="stok" value="<?php echo
-                                                            $data['stok']; ?>" />
-                </div>
-                <div class="input">
-                    <label>File Gambar</label>
-                    <input type="file" name="file_gambar" />
-                </div>
-                <div class="submit">
-                    <input type="hidden" name="id" value="<?php echo
-                                                            $data['id_barang']; ?>" />
-                    <input type="submit" name="submit" value="Simpan" />
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
-
-</html>
+header('location: index.php');
+>
 ```
-
-## Hasil Run 
-
-![Screenshot (163)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/b21c06c3-c9f4-4652-9f26-5d928e17f7e9)
-
-![Screenshot (164)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/af4c5bd0-1a47-4572-a6a3-8098b71055d3)
-
+> **Output**
+![Screenshot (25)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9b870184-a856-4876-aed7-8e9415ae39d7)
 
 ## Lab4 PHP_MODULAR
+* Instruksi Praktikum
+1. Persiapkan text editor misalnya VSCode
 
-> `Index.php`
-```
-<?php
+2. Buat folder baru dengan nama `lab4_php_modular` pada docroot webserver (htdocs)
 
-$mod = $_REQUEST['mod'];
+3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya
 
-switch  ($mod) {
-    case "home":
-        require("home.php");
-        break;
-    case "about":
-        require("about");
-        break;
-    default:
-        require("home.php");
-        break;
-}
-?>  
-```
+* Langkah-langkah Praktikum
+- Jalankan Apache dan MySQL server dari menu XAMPP Control
+- Kemudian buat folder baru dengan nama lab4_php_modular pada docroot webserver (c:\xampp\htdocs). Kemudian buka melalui browser dengan mengakses URL: http://localhost/lab4_php_modular/.
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/affe1246-9b18-46c8-a078-df966143e434)
 
-> `Home`
-```
-<?php require('header.php'); ?>
-<div class="content">
-    <h2>Ini Halaman Home</h2>
-    <p>Ini adalah bagian content dari halaman.</p>
-</div>
-<?php require('footer.php');?>
-```
-
-> `Footer`
-```
-<footer>
-    <p>&copy; 2024, Teknik Informatika, Universitas Pelita Bangsa</p>
-</footer>
-</div>
-</body>
-</html>
-```
-
-> `Header`
+1. Buat file dengan nama `header.php`
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -542,36 +334,88 @@ switch  ($mod) {
         </header>
         <nav>
             <a href="home.php">Home</a>
-            <a href="about.php">About</a>
+            <a href="about.php">Tentang</a>
             <a href="kontak.php">Kontak</a>
         </nav>
+```
+
+2. Buat file dengan nama `footer.php`
+```
         <footer>
-        <p>&copy; 2024, Teknik Informatika, Universitas Pelita Bangsa</p>
-    </footer>
+            <p>&copy; 2021, Informatika, Universitas Pelita Bangsa</p>
+        </footer>
     </div>
 </body>
 </html>
 ```
 
-> `About.php`
+3. Buat file dengan nama `home.php`
+```
+<?php require('header.php'); ?>
+
+<div class="content">
+    <h2>Ini Halaman Home</h2>
+    <p>Ini adalah bagian content dari halaman.</p>
+</div>
+
+<?php require('footer.php'); ?>
+```
+
+4. Buat file dengan nama `about.php`
 ```
 <?php require('header.php'); ?>
 
 <div class="content">
     <h2>Ini Halaman About</h2>
-    <p>Ini adalah content dari halaman.</p>
+    <p>Ini adalah bagian content dari halaman.</p>
 </div>
 
-<?php require('footer.php');?>
+<?php require('footer.php'); ?>
 ```
-## Hasil Run
+> **Output**
 
-![web6](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/436db88f-ccdf-4069-926e-0a2e02118843)
+https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/3c05596b-7a15-4e9d-aee3-48529b8a8bd3
 
-![web7](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/121b707a-e734-4d83-8ebc-e6ce3d78522e)
+## Pertanyaan dan Tugas
+> Implementasikan konsep modularisasi pada kode program Praktikum 3 tentang database, sehingga setiap halamannya memiliki template tampilan yang sama.
+
+1. Buat folder baru dengan nama `lab4_php_praktikum`
+![Screenshot (48)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/e10a3268-ee78-4c20-a51a-abfa0c89a75e)
+
+- Setelah itu buat beberapa file sama seperti file-file yang ada pada praktikum 3, untuk script lebih lengkapnya kalian dapat langsung lihat pada folder
+lab4_php_praktikum.
+
+2. Hasil Output `koneksi.php` :
+   
+![Screenshot (24)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/8d56ff81-e91b-433b-b51f-686e57dfaab8)
+
+4. Hasil Output `home.php` :
+   
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/0b578a51-fc91-4b4b-9841-3c375cdcced6)
+
+6. Hasil Output `tambah.php` :
+   
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9b13689c-4149-4497-92e3-b14db590c061)
+
+8. Hasil Output `ubah.php` :
+   
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/29cc0ce6-1e49-42c1-aced-9cd14b26eba5)
+
+6. Hasil Output `hapus.php` :
+   
+![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/5e6941b0-e6b4-4efd-846a-0c4d4635704d)
 
 
 ## Lab5 PHP_OOP
+* Instruksi Praktikum
+1. Persiapkan text editor misalnya VSCode
+
+2. Buat folder baru dengan nama `lab5_php_oop` pada docroot webserver (htdocs)
+
+3. Ikuti langkah-langkah praktikum yang akan dijelaskan berikutnya
+
+* Langkah-langkah Praktikum
+- Buat file baru
 
 > `Database.php`
 ```
@@ -770,11 +614,12 @@ echo "<br><b>Mobil kedua</b><br>";
 $b->gantiWarna("Hijau");
 $b->tampilWarna();
 ```
-## Hasil Run
+> **Output**
 
-![web8](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/1f1a8b81-b659-4cd2-a25b-f73f5a57baba)
+![Screenshot (168)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/36bedd6f-8905-4d1c-8428-a9ce93337d70)
 
-![web9](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/50027d63-5b4c-48b1-bb5c-5237d74c8f14)
+
+![Screenshot (169)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/11535481-c042-4caa-afa3-8ddf87164017)
 
   
 # Sekian, Terima kasih.
