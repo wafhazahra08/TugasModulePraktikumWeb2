@@ -317,7 +317,7 @@ header('location: index.php');
 * Langkah-langkah Praktikum
 - Jalankan Apache dan MySQL server dari menu XAMPP Control
 - Kemudian buat folder baru dengan nama lab4_php_modular pada docroot webserver (c:\xampp\htdocs). Kemudian buka melalui browser dengan mengakses URL: http://localhost/lab4_php_modular/.
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/affe1246-9b18-46c8-a078-df966143e434)
+![web4-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/aa15fa0f-8d38-465a-9072-c23948961ddf)
 
 1. Buat file dengan nama `header.php`
 ```
@@ -375,37 +375,39 @@ header('location: index.php');
 ```
 > **Output**
 
-https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/3c05596b-7a15-4e9d-aee3-48529b8a8bd3
+![web4-2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/674661b8-c7b9-4b66-8781-12e1090c82bb)
+![web4-3](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/13ff8dd2-a1be-4972-84c7-8d645c01c9bd)
+![web4-4](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/e7a003f1-3bce-4369-871b-56f156598839)
+
 
 ## Pertanyaan dan Tugas
 > Implementasikan konsep modularisasi pada kode program Praktikum 3 tentang database, sehingga setiap halamannya memiliki template tampilan yang sama.
 
 1. Buat folder baru dengan nama `lab4_php_praktikum`
-![Screenshot (48)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/e10a3268-ee78-4c20-a51a-abfa0c89a75e)
+![web4-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/aa15fa0f-8d38-465a-9072-c23948961ddf)
 
 - Setelah itu buat beberapa file sama seperti file-file yang ada pada praktikum 3, untuk script lebih lengkapnya kalian dapat langsung lihat pada folder
 lab4_php_praktikum.
 
 2. Hasil Output `koneksi.php` :
    
-![Screenshot (24)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/8d56ff81-e91b-433b-b51f-686e57dfaab8)
+![web3-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/b38d7527-3b10-4304-a5fe-bd8882ec6b47)
 
-4. Hasil Output `home.php` :
+3. Hasil Output `home.php` :
    
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/0b578a51-fc91-4b4b-9841-3c375cdcced6)
+![web4-5](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/ff544318-5aa6-427d-b676-75b6f5d812e9)
 
-6. Hasil Output `tambah.php` :
+4. Hasil Output `tambah.php` :
    
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9b13689c-4149-4497-92e3-b14db590c061)
+![web4-6](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/6c90bc4e-43af-4fa5-b8e2-b48759d2cea1)
 
-8. Hasil Output `ubah.php` :
+5. Hasil Output `ubah.php` :
    
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/29cc0ce6-1e49-42c1-aced-9cd14b26eba5)
+![web4-7](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/6d2569e5-e7c1-4a69-8f7f-f2475f8acdd9)
 
 6. Hasil Output `hapus.php` :
    
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/5e6941b0-e6b4-4efd-846a-0c4d4635704d)
-
+![web4-8](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/29ad503f-8a66-4cf6-a39d-8038998e5436)
 
 ## Lab5 PHP_OOP
 * Instruksi Praktikum
@@ -617,10 +619,8 @@ $b->tampilWarna();
 ```
 > **Output**
 
-![Screenshot (168)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/36bedd6f-8905-4d1c-8428-a9ce93337d70)
-
-
-![Screenshot (169)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/11535481-c042-4caa-afa3-8ddf87164017)
+![web5-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/1fec0add-e4b2-4daa-a1b7-1cb668154bf3)
+![web5-2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/d4581b7c-0d74-437f-8881-a144cca768f1)
 
   
 # Sekian, Terima kasih.
