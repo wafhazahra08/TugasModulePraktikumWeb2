@@ -143,11 +143,12 @@ MATA KULIAH    : PEMOGRAMAN WEB 2
 </html>
 ```
 > **Output**
-![Screenshot (170)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/dc9d6bae-765f-4d5d-8b68-22acbd783e72)
+![web2-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/4a856b9e-f3ad-44fd-a401-fe565fa763d3)
 
-![Screenshot (171)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1b43a7c0-3b8b-42eb-8b03-a538f81ab982)
+![web2-2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/d084b01d-dbb7-4da1-9d16-6122f68633bc)
 
-![Screenshot (172)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/db02de17-8ea2-489b-bb22-4f3b4c570399)
+![web2-3](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/8a67c099-2e42-4079-93bd-541f85c3a9aa)
+
 
 
 ## TUGAS FORM INPUT
