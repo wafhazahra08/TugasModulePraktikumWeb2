@@ -213,7 +213,7 @@ MATA KULIAH    : PEMOGRAMAN WEB 2
 ```
 > **Output**
 
-![Screenshot (153)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9e56b07b-3152-4d36-b715-4cf3c5e9058c)
+![web2-4](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/8c5945e7-3512-4f44-8737-318bcc544a68)
 
 ## Lab3 PHP_DATABASE
 
@@ -275,23 +275,23 @@ if ($conn == false)
 ```
 > Buka melalui browser untuk menguji koneksi database untuk menyampilkan pesan koneksi berhasil, ***uncomment*** pada perintah echo “koneksi berhasil”;
 
-![Screenshot (24)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/4af00ce5-fd9f-47ed-8a41-a8bc43e5a4a6)
+![web3-1](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/b38d7527-3b10-4304-a5fe-bd8882ec6b47)
 
 7. Membuat file index untuk menampilkan data (Read), buat file baru dengan nama `index.php`
 
 > **Output**
-![image](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/674ae4f3-6c43-4722-a001-77b4d8774fdd)
+![web3-2](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/396975ea-69f3-40ec-a52d-69ee78583a5a)
 
 8. Menambah Data (Create), buat file baru dengan nama `tambah.php`
 
 > **Output**
-![Screenshot (26)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/1f29937e-80c3-437d-b5fe-6bc80345e29b)
+![web3-3](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/dacec31b-b137-4f00-962a-7b518b3db928)
 
 9. Mengubah Data (Update), buat file baru dengan nama `ubah.php`
 
 > **Output**
 
-![Screenshot (27)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/3039093e-9a41-43bc-8d93-b4a988f74dd7)
+![web3-4](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/0eed5c8d-69ff-4409-8b2f-a6d37a234f65)
 
 10. Menghapus Data (Delete), buat file baru dengan nama `hapus.php`
 ```
@@ -304,7 +304,7 @@ header('location: index.php');
 >
 ```
 > **Output**
-![Screenshot (25)](https://github.com/zulaeha168/ModulPraktikumWeb2/assets/130324650/9b870184-a856-4876-aed7-8e9415ae39d7)
+![web3-5](https://github.com/wafhazahra08/TugasModulePraktikumWeb2/assets/131223804/fe775343-04ed-4e73-a97e-2c6cab6a1ccd)
 
 ## Lab4 PHP_MODULAR
 * Instruksi Praktikum
